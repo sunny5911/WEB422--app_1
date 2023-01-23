@@ -16,6 +16,8 @@
     "url": "https://github.com/sunny5911/WEB422--app_1/issues"
   },
   "homepage": "https://github.com/sunny5911/WEB422--app_1#readme",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",

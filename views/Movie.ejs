@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="/public/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title><%=movie.title %></title>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="row pt-5">
+      <div class="col-12">
+        <div class="main_card">
+          <div class="card_left">
+            <div class="card_datails">
+              <h1 class="col-10">
+                <%=movie.title %>
+              </h1>
+<div class="row">
+  <div class="col-3">
+                  <p class="year mb-0">
+                    <%=movie.year %>
+                  </p>
+                  <p class="genre mb-0">
+                    Rating: <%=movie.imdb?.rating %>
+                  </p>
+                  <p class="genre mb-0">
+                    <%=movie.languages %>
+                  </p>
+                  <p class="genre mb-0">
+                    <%=movie.genres %>
+                  </p>
+                  </div>
+                  <div class="col">
+                    <img src="<%=movie.poster%>" style="height: 200px;" alt=" <%=movie.title %>">
+                  </div>
+                  </div>
+                  <p class="disc mb-0">
+                    <%=movie.fullplot %>
+                  </p>
+                  <p class="genre mb-0">
+                    Directors:- <%=movie.directors %>
+                  </p>
+              <div class="card_cat">
+                <a href="/Movie/delete/<%= movie.id %>"> <button onclick="return confirm('Are you sure you want to delete this movie?')" class="btn bg-danger"><i class="fa fa-trash"></i> Delete</button></a>
+                <a href="/Movie/Edit/<%= movie.id %>">
+                  <button onclick="return confirm('Are you sure you want to edit this movie?')" class="btn bg-primary">
+                    <i class="fa fa-edit"></i> Edit</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
