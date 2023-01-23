@@ -1,21 +1,15 @@
 {
-  "name": "web422--app_1",
+  "name": "web422_app1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+   "start": "node server.js"
   },
-  "repository": {
+    "repository": {
     "type": "git",
     "url": "git+https://github.com/sunny5911/WEB422--app_1.git"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sunny5911/WEB422--app_1/issues"
-  },
-  "homepage": "https://github.com/sunny5911/WEB422--app_1#readme",
   "author": "",
   "license": "ISC",
   "dependencies": {
